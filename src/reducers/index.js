@@ -24,7 +24,7 @@ const battleList = (battleList = [], action) => {
 };
 
 const uniqueBattleList = (uniqueBattles = [], action) => {
-    console.log(action.payload,action.type);
+   
     if (action.type == "FETCH_BATTLE_LIST") {
       return action.payload.data||[];
     }

@@ -32,9 +32,9 @@ export const filterSelected = (filter) => {
 };
 
 export const fetchBattle = (search_text) => {
-  console.log(search_text);
+ 
   let params = Object.keys(search_text).length === 0 ? {} : search_text;
-  console.log(params, "params");
+ 
 
   return async function (dispatch) {
     const response = await api.get(`/search`, {
